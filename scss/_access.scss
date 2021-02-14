@@ -1,0 +1,51 @@
+.access {
+    background-color: #A193861F;
+    &-wrap {
+        padding: 20vh 0;
+        .title {
+            padding-left: 8.4vh;
+        }
+    }
+    &-details {
+        display: flex;
+        margin-top: 6px;
+        height: 396px;
+        background-color: #D0C5BA;
+        @include tab {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-text {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-left: 8.4vh;
+        @include tab {
+            width: 100%;
+            height: 50vh;
+        }
+        table tr th {
+            font-size: 2.4rem;
+            font-weight: bold;
+            letter-spacing: 2.4px;
+            color: #00000038;
+        }
+        table tr td {
+            display: inline-block;
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+            color: #fff;
+            margin-top: 5%;
+        }
+    }
+    iframe {
+        width: 60%;
+        @include tab {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+}
+

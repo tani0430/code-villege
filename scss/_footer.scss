@@ -1,0 +1,46 @@
+footer {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        .bar {
+            width: 100%;
+            border-top: 1px solid #70707036;
+        }
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 84px;
+    @include tab {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer-item {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 3.2rem;
+            letter-spacing: 3.2px;
+            color: #7070704D;
+            margin-right: 26px;
+        }
+        i {
+            margin-right: 9px;
+        }
+    }
+    button {
+        width: 184px;
+        padding: 0;
+        color: #7070704D;
+        background-color: #fff;
+        border: 1px solid #7070704D;
+        @include tab {
+            margin: 5% auto;
+            height: 5vh;
+        }
+    }
+}
+

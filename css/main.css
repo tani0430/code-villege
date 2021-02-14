@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--------レスポンシブ-------------*/
+/*----------------共通----------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  line-height: 1.67; }
+
+.wrap {
+  top: 0;
+  left: 0;
+  padding: 20vh 8.4vw 6.5vh;
+  margin: auto 0;
+  width: 100vw;
+  height: 100%; }
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  letter-spacing: 5.4px;
+  color: #707070; }
+  .title::after {
+    display: inline-block;
+    content: "";
+    border: 1px solid;
+    width: 99px;
+    opacity: 0.7;
+    margin-left: 22.5px; }
+
+header {
+  padding: 68px 0 24% 6%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 10; }
+  @media screen and (max-width: 959px) {
+    header {
+      width: 90%;
+      padding-top: 3%;
+      justify-content: space-between;
+      color: #fff; } }
+  @media screen and (max-width: 959px) {
+    header nav {
+      display: none; } }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #707070; }
+  header nav li {
+    margin-left: 21px; }
+  header nav li:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+    letter-spacing: 1rem; }
+
+.logo {
+  font-size: 3.8rem;
+  letter-spacing: 0.38rem; }
+  @media screen and (max-width: 959px) {
+    .logo {
+      font-size: 2.5rem; } }
+
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    .ham span {
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      background-color: #fff; } }
+
+.first-v {
+  display: flex; }
+
+.catch {
+  width: 42%;
+  height: 100vh;
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (max-width: 959px) {
+    .catch {
+      width: 50%;
+      font-size: 2.5rem;
+      letter-spacing: 0.25rem;
+      position: absolute;
+      top: 10%;
+      color: #fff; } }
+  .catch #catch1 {
+    font-family: "ヒラギノ明朝 Pro"; }
+  .catch #catch2 {
+    font-family: "Zapfino";
+    height: 128px;
+    margin-top: 48px; }
+    @media screen and (max-width: 959px) {
+      .catch #catch2 {
+        margin-top: 10%; } }
+
+.first-img {
+  width: 58%;
+  height: 100vh;
+  background-image: url(../img/component.png);
+  background-size: cover; }
+  @media screen and (max-width: 959px) {
+    .first-img {
+      width: 100%; } }
+
+.concept {
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 40%, #81674e89 0%, #81674e89 100%); }
+  .concept .wrap .concept-img {
+    width: 100%; }
+    .concept .wrap .concept-img #img1 {
+      width: 63%; }
+      @media screen and (max-width: 959px) {
+        .concept .wrap .concept-img #img1 {
+          width: 100%; } }
+    .concept .wrap .concept-img #img2 {
+      width: 36%; }
+      @media screen and (max-width: 959px) {
+        .concept .wrap .concept-img #img2 {
+          width: 100%; } }
+  .concept .wrap #text1 {
+    font-family: "ヒラギノ明朝 Pro";
+    font-size: 3.5rem;
+    letter-spacing: 1.6rem;
+    color: #fff; }
+    @media screen and (max-width: 959px) {
+      .concept .wrap #text1 {
+        font-size: 2rem;
+        margin: 5% auto; } }
+  .concept .wrap #text2 {
+    font-family: "ヒラギノ角ゴ Pro";
+    font-size: 1.6rem;
+    letter-spacing: 0.16rem;
+    color: #fff;
+    width: 35%; }
+    @media screen and (max-width: 959px) {
+      .concept .wrap #text2 {
+        width: unset;
+        margin: 0 auto; } }
+
+.concept-item {
+  margin-top: 11px; }
+
+.concept-text {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 959px) {
+    .concept-text {
+      display: flex;
+      flex-direction: column; } }
+  .concept-text #text1, .concept-text #text2 {
+    margin-left: 10%; }
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px; }
+  @media screen and (max-width: 959px) {
+    .menu-content {
+      display: flex;
+      flex-direction: column; } }
+
+.menu-item {
+  width: 25%; }
+  @media screen and (max-width: 959px) {
+    .menu-item {
+      width: 100%;
+      margin-top: 5%; } }
+  .menu-item img {
+    width: 100%; }
+  .menu-item_title {
+    width: 100%;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 37px auto;
+    text-align: center; }
+  .menu-item #menu-text {
+    width: 88%;
+    font-size: 1.6rem;
+    letter-spacing: 1.6px;
+    margin: 34px auto; }
+  .menu-item #price {
+    width: 50%;
+    font-size: 1.6rem;
+    letter-spacing: 1.6px;
+    margin-left: auto; }
+
+.access {
+  background-color: #A193861F; }
+  .access-wrap {
+    padding: 20vh 0; }
+    .access-wrap .title {
+      padding-left: 8.4vh; }
+  .access-details {
+    display: flex;
+    margin-top: 6px;
+    height: 396px;
+    background-color: #D0C5BA; }
+    @media screen and (max-width: 959px) {
+      .access-details {
+        display: flex;
+        flex-direction: column; } }
+  .access-text {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 8.4vh; }
+    @media screen and (max-width: 959px) {
+      .access-text {
+        width: 100%;
+        height: 50vh; } }
+    .access-text table tr th {
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: 2.4px;
+      color: #00000038; }
+    .access-text table tr td {
+      display: inline-block;
+      font-size: 1.6rem;
+      letter-spacing: 1.6px;
+      color: #fff;
+      margin-top: 5%; }
+  .access iframe {
+    width: 60%; }
+    @media screen and (max-width: 959px) {
+      .access iframe {
+        width: 100%;
+        height: 100vh; } }
+
+footer .wrap {
+  display: flex;
+  flex-direction: column; }
+  footer .wrap .bar {
+    width: 100%;
+    border-top: 1px solid #70707036; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 84px; }
+  @media screen and (max-width: 959px) {
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto; } }
+  .footer-content .footer-item {
+    display: flex;
+    align-items: center; }
+    .footer-content .footer-item h2 {
+      font-size: 3.2rem;
+      letter-spacing: 3.2px;
+      color: #7070704D;
+      margin-right: 26px; }
+    .footer-content .footer-item i {
+      margin-right: 9px; }
+  .footer-content button {
+    width: 184px;
+    padding: 0;
+    color: #7070704D;
+    background-color: #fff;
+    border: 1px solid #7070704D; }
+    @media screen and (max-width: 959px) {
+      .footer-content button {
+        margin: 5% auto;
+        height: 5vh; } }
+
+/*# sourceMappingURL=main.css.map */
