@@ -11,24 +11,30 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    @include tab {
-        width: 50%;
-        font-size: 2.5rem;
-        letter-spacing: 0.25rem;
+    @include sp {
+        width: 100%;
+        display: flexbox;
         position: absolute;
         top: 10%;
         color: #fff;
+        text-shadow: 0px 3px 16px #000;
+        font-weight: initial;
     }
     #catch1 {
         font-family: "ヒラギノ明朝 Pro";
+        @include sp {
+            order: 2;
+            margin-top: 48px;
+        }
 
     }
     #catch2 {
         font-family: "Zapfino";
         height: 128px;
         margin-top: 48px;
-        @include tab {
-            margin-top: 10%;
+        @include sp {
+            order: 1;
+            height: unset;
         }
     }
 }
@@ -38,7 +44,7 @@
     height: 100vh;
     background-image: url(../img/component.png);
     background-size: cover;
-    @include tab {
+    @include sp {
         width: 100%;
     }
 }

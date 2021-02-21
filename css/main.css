@@ -86,13 +86,13 @@ header {
   align-items: center;
   position: absolute;
   z-index: 10; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     header {
-      width: 90%;
-      padding-top: 3%;
+      position: unset;
+      padding: 24px 21px;
       justify-content: space-between;
-      color: #fff; } }
-  @media screen and (max-width: 959px) {
+      color: #000; } }
+  @media screen and (max-width: 600px) {
     header nav {
       display: none; } }
   header nav ul {
@@ -111,22 +111,25 @@ header {
 .logo {
   font-size: 3.8rem;
   letter-spacing: 0.38rem; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .logo {
-      font-size: 2.5rem; } }
+      font-size: 2.2rem;
+      letter-spacing: 0.22rem; } }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 600px) {
   .ham {
-    width: 30px;
-    height: 20px;
+    width: 16px;
+    height: 14px;
     display: flex;
     justify-content: space-between;
     flex-direction: column; }
     .ham span {
       display: inline-block;
       width: 100%;
-      height: 1px;
-      background-color: #fff; } }
+      height: 2px;
+      background-color: #3B4043; }
+    .ham .harf {
+      width: 50%; } }
 
 .first-v {
   display: flex; }
@@ -140,47 +143,58 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .catch {
-      width: 50%;
-      font-size: 2.5rem;
-      letter-spacing: 0.25rem;
+      width: 100%;
+      display: flexbox;
       position: absolute;
       top: 10%;
-      color: #fff; } }
+      color: #fff;
+      text-shadow: 0px 3px 16px #000;
+      font-weight: initial; } }
   .catch #catch1 {
     font-family: "ヒラギノ明朝 Pro"; }
+    @media screen and (max-width: 600px) {
+      .catch #catch1 {
+        order: 2;
+        margin-top: 48px; } }
   .catch #catch2 {
     font-family: "Zapfino";
     height: 128px;
     margin-top: 48px; }
-    @media screen and (max-width: 959px) {
+    @media screen and (max-width: 600px) {
       .catch #catch2 {
-        margin-top: 10%; } }
+        order: 1;
+        height: unset; } }
 
 .first-img {
   width: 58%;
   height: 100vh;
   background-image: url(../img/component.png);
   background-size: cover; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .first-img {
       width: 100%; } }
 
 .concept {
   background: linear-gradient(180deg, #A193861F 0%, #A193861F 40%, #81674e89 0%, #81674e89 100%); }
   .concept .wrap .concept-img {
-    width: 100%; }
+    width: 100%;
+    display: flex; }
     .concept .wrap .concept-img #img1 {
       width: 63%; }
       @media screen and (max-width: 959px) {
         .concept .wrap .concept-img #img1 {
-          width: 100%; } }
+          width: 50%;
+          margin-right: 7px;
+          object-fit: cover;
+          object-position: 100% 50%; } }
     .concept .wrap .concept-img #img2 {
       width: 36%; }
       @media screen and (max-width: 959px) {
         .concept .wrap .concept-img #img2 {
-          width: 100%; } }
+          width: 50%;
+          object-fit: cover; } }
   .concept .wrap #text1 {
     font-family: "ヒラギノ明朝 Pro";
     font-size: 3.5rem;
@@ -206,7 +220,8 @@ header {
 
 .concept-text {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin: 5% 0; }
   @media screen and (max-width: 959px) {
     .concept-text {
       display: flex;
@@ -218,36 +233,38 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 11px; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .menu-content {
       display: flex;
       flex-direction: column; } }
 
 .menu-item {
   width: 25%; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .menu-item {
       width: 100%;
       margin-top: 5%; } }
   .menu-item img {
     width: 100%; }
   .menu-item_title {
-    width: 100%;
+    width: 88%;
     font-size: 3rem;
     letter-spacing: 3px;
     font-weight: bold;
     margin: 37px auto;
     text-align: center; }
+    @media screen and (max-width: 600px) {
+      .menu-item_title {
+        text-align: unset; } }
   .menu-item #menu-text {
     width: 88%;
     font-size: 1.6rem;
     letter-spacing: 1.6px;
     margin: 34px auto; }
   .menu-item #price {
-    width: 50%;
     font-size: 1.6rem;
     letter-spacing: 1.6px;
-    margin-left: auto; }
+    text-align: right; }
 
 .access {
   background-color: #A193861F; }
@@ -262,8 +279,9 @@ header {
     background-color: #D0C5BA; }
     @media screen and (max-width: 959px) {
       .access-details {
-        display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        display: flexbox;
+        height: unset; } }
   .access-text {
     width: 40%;
     display: flex;
@@ -273,7 +291,8 @@ header {
     @media screen and (max-width: 959px) {
       .access-text {
         width: 100%;
-        height: 50vh; } }
+        margin: 30px 0 60px 0;
+        order: 2; } }
     .access-text table tr th {
       font-size: 2.4rem;
       font-weight: bold;
@@ -285,12 +304,16 @@ header {
       letter-spacing: 1.6px;
       color: #fff;
       margin-top: 5%; }
+      @media screen and (max-width: 959px) {
+        .access-text table tr td {
+          margin-top: 30px; } }
   .access iframe {
     width: 60%; }
     @media screen and (max-width: 959px) {
       .access iframe {
         width: 100%;
-        height: 100vh; } }
+        height: 50vh;
+        order: 1; } }
 
 footer .wrap {
   display: flex;
@@ -303,30 +326,43 @@ footer .wrap {
   display: flex;
   justify-content: space-between;
   padding-top: 84px; }
-  @media screen and (max-width: 959px) {
+  @media screen and (max-width: 600px) {
     .footer-content {
-      display: flex;
       flex-direction: column;
+      width: 100%;
+      display: flexbox;
       margin: 0 auto; } }
   .footer-content .footer-item {
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 600px) {
+      .footer-content .footer-item {
+        order: 2;
+        justify-content: space-between;
+        margin: 62px 21px 19px 21px; } }
     .footer-content .footer-item h2 {
       font-size: 3.2rem;
       letter-spacing: 3.2px;
       color: #7070704D;
       margin-right: 26px; }
+      @media screen and (max-width: 600px) {
+        .footer-content .footer-item h2 {
+          font-size: 1.8rem;
+          letter-spacing: 0.18rem; } }
     .footer-content .footer-item i {
       margin-right: 9px; }
   .footer-content button {
     width: 184px;
     padding: 0;
-    color: #7070704D;
+    color: #707070;
     background-color: #fff;
-    border: 1px solid #7070704D; }
-    @media screen and (max-width: 959px) {
+    border: 1px solid #707070;
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem; }
+    @media screen and (max-width: 600px) {
       .footer-content button {
         margin: 5% auto;
-        height: 5vh; } }
+        height: 37px;
+        order: 1; } }
 
 /*# sourceMappingURL=main.css.map */

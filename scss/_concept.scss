@@ -3,16 +3,21 @@
     .wrap {
         .concept-img {
             width: 100%;
+            display: flex;
             #img1 {
                 width: 63%;
                 @include tab {
-                    width: 100%;
+                    width: 50%;
+                    margin-right: 7px;
+                    object-fit: cover;
+                    object-position: 100% 50%;
                 }
             }
             #img2 {
                 width: 36%;
                 @include tab {
-                    width: 100%;
+                    width: 50%;
+                    object-fit: cover;
                 }
             }
         }
@@ -48,6 +53,7 @@
 .concept-text {
     display: flex;
     align-items: center;
+    margin: 5% 0;
     @include tab {
         display: flex;
         flex-direction: column;

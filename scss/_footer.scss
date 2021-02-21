@@ -13,19 +13,29 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 84px;
-    @include tab {
-        display: flex;
+    @include sp {
         flex-direction: column;
+        width: 100%;
+        display: flexbox;
         margin: 0 auto;
     }
     .footer-item {
         display: flex;
         align-items: center;
+        @include sp {
+            order: 2;
+            justify-content: space-between;
+            margin: 62px 21px 19px 21px;
+        }
         h2 {
             font-size: 3.2rem;
             letter-spacing: 3.2px;
             color: #7070704D;
             margin-right: 26px;
+            @include sp {
+                font-size: 1.8rem;
+                letter-spacing: 0.18rem;
+            }
         }
         i {
             margin-right: 9px;
@@ -34,12 +44,15 @@ footer {
     button {
         width: 184px;
         padding: 0;
-        color: #7070704D;
+        color: #707070;
         background-color: #fff;
-        border: 1px solid #7070704D;
-        @include tab {
+        border: 1px solid #707070;
+        font-size: 1.8rem;
+        letter-spacing: 0.18rem;
+        @include sp {
             margin: 5% auto;
-            height: 5vh;
+            height: 37px;
+            order: 1;
         }
     }
 }
