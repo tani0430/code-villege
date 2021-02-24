@@ -154,18 +154,26 @@ header {
       font-weight: initial; } }
   .catch #catch1 {
     font-family: "ヒラギノ明朝 Pro"; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 959px) {
       .catch #catch1 {
         order: 2;
         margin-top: 48px; } }
+    @media screen and (max-width: 600px) {
+      .catch #catch1 {
+        font-size: 2.3rem;
+        letter-spacing: 0.23rem; } }
   .catch #catch2 {
     font-family: "Zapfino";
     height: 128px;
     margin-top: 48px; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 959px) {
       .catch #catch2 {
         order: 1;
         height: unset; } }
+    @media screen and (max-width: 600px) {
+      .catch #catch2 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem; } }
 
 .first-img {
   width: 58%;
@@ -202,7 +210,8 @@ header {
     color: #fff; }
     @media screen and (max-width: 959px) {
       .concept .wrap #text1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.72rem;
         margin: 5% auto; } }
   .concept .wrap #text2 {
     font-family: "ヒラギノ角ゴ Pro";
@@ -255,7 +264,9 @@ header {
     text-align: center; }
     @media screen and (max-width: 600px) {
       .menu-item_title {
-        text-align: unset; } }
+        text-align: unset;
+        font-size: 2.5rem;
+        letter-spacing: 0.25rem; } }
   .menu-item #menu-text {
     width: 88%;
     font-size: 1.6rem;
@@ -272,6 +283,9 @@ header {
     padding: 20vh 0; }
     .access-wrap .title {
       padding-left: 8.4vh; }
+      @media screen and (max-width: 600px) {
+        .access-wrap .title {
+          padding-left: 20px; } }
   .access-details {
     display: flex;
     margin-top: 6px;
@@ -292,6 +306,7 @@ header {
       .access-text {
         width: 100%;
         margin: 30px 0 60px 0;
+        padding-left: 20px;
         order: 2; } }
     .access-text table tr th {
       font-size: 2.4rem;
@@ -306,7 +321,7 @@ header {
       margin-top: 5%; }
       @media screen and (max-width: 959px) {
         .access-text table tr td {
-          margin-top: 30px; } }
+          margin-top: 24px; } }
   .access iframe {
     width: 60%; }
     @media screen and (max-width: 959px) {
@@ -339,7 +354,7 @@ footer .wrap {
       .footer-content .footer-item {
         order: 2;
         justify-content: space-between;
-        margin: 62px 21px 19px 21px; } }
+        margin-top: 62px; } }
     .footer-content .footer-item h2 {
       font-size: 3.2rem;
       letter-spacing: 3.2px;

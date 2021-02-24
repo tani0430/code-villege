@@ -26,6 +26,8 @@
         text-align: center;
         @include sp {
             text-align: unset;
+            font-size: 2.5rem;
+            letter-spacing: 0.25rem;
         }
 
     }
